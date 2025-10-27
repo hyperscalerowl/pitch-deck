@@ -1,7 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import styles from "./page.module.css";
+import { footerLinks } from "./navigationLinks";
 
 type PersonaKey = "affiliates" | "customers" | "team";
 
@@ -247,11 +249,20 @@ export default function Home() {
               <li>
                 <a href="#story">Story</a>
               </li>
+              <li>
+                <Link href="/about">About</Link>
+              </li>
+              <li>
+                <Link href="/blog">Blog</Link>
+              </li>
+              <li>
+                <Link href="/contact">Contact</Link>
+              </li>
             </ul>
           </nav>
-          <a className={styles.navCta} href="#contact">
+          <Link className={styles.navCta} href="/contact">
             Join the Revolution
-          </a>
+          </Link>
         </div>
 
         <div className={styles.heroContent}>
@@ -269,9 +280,9 @@ export default function Home() {
               <a href="#who" className={styles.primaryCta}>
                 Explore the Network
               </a>
-              <a href="#contact" className={styles.secondaryCta}>
+              <Link href="/contact" className={styles.secondaryCta}>
                 Become an Affiliate
-              </a>
+              </Link>
             </div>
           </div>
           <div className={styles.heroPanel}>
@@ -530,6 +541,13 @@ export default function Home() {
           <p className={styles.footerNote}>
             Carbon conscious, community owned, globally resilient.
           </p>
+          <ul className={styles.footerNav}>
+            {footerLinks.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href}>{link.label}</Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </footer>
     </div>

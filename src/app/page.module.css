@@ -620,6 +620,26 @@
   color: rgba(111, 255, 233, 0.8);
 }
 
+.footerNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.footerNav a {
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.footerNav a:hover,
+.footerNav a:focus {
+  color: var(--accent);
+  text-decoration: none;
+}
+
 @media (max-width: 1024px) {
   .heroContent {
     grid-template-columns: 1fr;
