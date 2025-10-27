@@ -1,0 +1,264 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--background);
+  color: var(--text-primary);
+}
+
+.header {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+  padding: 2.5rem 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.brandMark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, rgba(111, 255, 233, 0.35), rgba(77, 187, 255, 0.35));
+  font-size: 1.25rem;
+}
+
+.navList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+  list-style: none;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.navList a {
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.navList a:hover,
+.navList a:focus {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.navCta {
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-medium);
+  background: var(--accent-strong);
+  color: #020205;
+  font-weight: 600;
+  box-shadow: 0 20px 40px rgba(77, 187, 255, 0.3);
+}
+
+.main {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+  flex: 1;
+  display: grid;
+  gap: 3rem;
+}
+
+.heroTitle {
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.heroIntro {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 60ch;
+}
+
+.sectionHeading {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.sectionText {
+  display: grid;
+  gap: 1rem;
+  color: var(--text-secondary);
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 1.75rem;
+  border-radius: var(--radius-medium);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  display: grid;
+  gap: 0.75rem;
+}
+
+.card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.detailList {
+  display: grid;
+  gap: 0.75rem;
+  list-style: none;
+  color: var(--text-secondary);
+}
+
+.detailList li::before {
+  content: "•";
+  color: var(--accent);
+  margin-right: 0.5rem;
+}
+
+.contactForm {
+  display: grid;
+  gap: 1rem;
+  max-width: 520px;
+}
+
+.contactForm label {
+  display: grid;
+  gap: 0.4rem;
+  font-weight: 500;
+}
+
+.contactForm input,
+.contactForm textarea,
+.contactForm select {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-medium);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(6, 10, 24, 0.75);
+  color: var(--text-primary);
+  font: inherit;
+}
+
+.contactForm textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.submitButton {
+  justify-self: start;
+  padding: 0.9rem 1.8rem;
+  border-radius: var(--radius-medium);
+  border: none;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: #020205;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submitButton:hover,
+.submitButton:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 45px rgba(111, 255, 233, 0.35);
+}
+
+.metaList {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.commentSection {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.commentList {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.comment {
+  padding: 1.5rem;
+  border-radius: var(--radius-medium);
+  background: rgba(10, 16, 32, 0.85);
+  border: 1px solid rgba(111, 255, 233, 0.12);
+  display: grid;
+  gap: 0.5rem;
+}
+
+.comment header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.commentAuthor {
+  font-weight: 600;
+}
+
+.footer {
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(6, 10, 24, 0.75);
+}
+
+.footerInner {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+  padding: 2rem 0 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footerNav {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  list-style: none;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.footerNav a:hover,
+.footerNav a:focus {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 2rem;
+  }
+
+  .navList {
+    gap: 1rem;
+  }
+
+  .navCta {
+    align-self: flex-start;
+  }
+}
