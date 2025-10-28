@@ -1,0 +1,68 @@
+{
+  "slug": "affiliate-success-playbook",
+  "title": "The Affiliate Success Playbook",
+  "publishedAt": "2024-06-20",
+  "readingTime": "9 min read",
+  "excerpt": "From onboarding to expansion, here’s how HyperScalerOwl equips every affiliate host to run profitable, resilient micro data centers.",
+  "description": "Learn how HyperScalerOwl recruits, trains, and supports affiliates so GreenCloud capacity scales with local ownership and enterprise-grade reliability.",
+  "intro": "Affiliates are the backbone of GreenCloud. Their spaces house the compute, and their communities feel the economic lift. This playbook captures how we help each host ramp from day one to multi-site operator.",
+  "tags": [
+    "affiliates",
+    "community",
+    "operations"
+  ],
+  "sections": [
+    {
+      "heading": "Curated onboarding journeys",
+      "body": [
+        "Every affiliate receives a readiness assessment covering energy, security, and connectivity. Our team co-designs upgrades, deploys hardware, and trains local technicians before workloads ever arrive."
+      ],
+      "list": [
+        "Day 0: Space evaluation and energy optimization blueprint",
+        "Day 5: Hardware delivery with plug-and-play install guides",
+        "Day 10: Live workloads paired with success KPIs"
+      ]
+    },
+    {
+      "heading": "Operational excellence in a box",
+      "body": [
+        "Affiliate dashboards surface predictive maintenance alerts, customer satisfaction scores, and community engagement prompts. Hosts know when to upsell new services or request on-site support.",
+        "For multi-site operators, federated management tools make it easy to balance capacity across neighborhoods while tracking profitability in real time."
+      ]
+    },
+    {
+      "heading": "Growth capital that stays local",
+      "body": [
+        "We reinvest 20% of marketplace profits into microgrants and low-interest loans. Affiliates expand responsibly, maintain quality, and hire local talent to manage their growing fleets."
+      ]
+    }
+  ],
+  "quote": {
+    "text": "I went from one converted storage room to four active GreenCloud sites in under a year—with HyperScalerOwl coaching me at every step.",
+    "attribution": "Nia Campbell, Multi-site affiliate operator"
+  },
+  "cta": {
+    "label": "Apply to host a pod",
+    "href": "/contact"
+  },
+  "comments": [
+    {
+      "name": "Eric Baum",
+      "role": "Affiliate host, Berlin",
+      "message": "The predictive maintenance alerts saved me from downtime twice this quarter. Support is instant, even in the middle of the night.",
+      "timestamp": "June 21, 2024"
+    },
+    {
+      "name": "Sofia Mendes",
+      "role": "Community manager, Porto",
+      "message": "We used the microgrant program to retrofit a historic building. Now our affiliate site doubles as a coding lab for local students.",
+      "timestamp": "June 22, 2024"
+    },
+    {
+      "name": "Marcus Young",
+      "role": "Head of Ops, Lattice Robotics",
+      "message": "Our SLAs haven’t slipped once since deploying to affiliates across three cities. The local technicians know the hardware better than any remote team I’ve worked with.",
+      "timestamp": "June 23, 2024"
+    }
+  ]
+}

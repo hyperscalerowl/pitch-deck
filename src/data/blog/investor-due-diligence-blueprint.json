@@ -1,0 +1,69 @@
+{
+  "slug": "investor-due-diligence-blueprint",
+  "title": "The GreenCloud Due Diligence Blueprint for Investors",
+  "publishedAt": "2024-06-28",
+  "readingTime": "6 min read",
+  "excerpt": "How our data room, operational telemetry, and traction narratives create a transparent diligence experience for strategic investors.",
+  "description": "Understand how HyperScalerOwl packages traction, compliance, and growth levers for investors evaluating the GreenCloud opportunity.",
+  "intro": "Investors evaluating GreenCloud expect proof of durable economics, compliant operations, and a roadmap that scales faster than incumbents. We engineered our diligence experience to answer those questions in minutes, not months.",
+  "tags": [
+    "investors",
+    "diligence",
+    "growth"
+  ],
+  "sections": [
+    {
+      "heading": "Telemetry-first transparency",
+      "body": [
+        "Every workload running on GreenCloud feeds into a live telemetry plane investors can inspect. Revenue cohorts, affiliate payouts, and SLA adherence are all visualized inside our secure data room.",
+        "The result: diligence conversations focus on future acceleration, not basic validation."
+      ],
+      "list": [
+        "MRR growth, churn, and payback windows update nightly with audit trails",
+        "Regulatory controls mapped to SOC 2 and GDPR clauses with evidence attachments",
+        "Energy efficiency dashboards per city with third-party verification"
+      ]
+    },
+    {
+      "heading": "Traction narratives investors can remix",
+      "body": [
+        "We package customer stories, product velocity, and market expansion plans into modular narrative decks. Investors can pull the slides, transcripts, and metrics they need to brief their partners or investment committees.",
+        "Each narrative connects product milestones to revenue inflection points, making it easy to model upside across conservative and aggressive scenarios."
+      ]
+    },
+    {
+      "heading": "Governance engineered for scale",
+      "body": [
+        "Our board cadence includes real-time metric alerts, standard operating playbooks for new geography launches, and compliance heatmaps. The governance framework de-risks expansion into regulated markets while keeping the affiliate community front and center."
+      ]
+    }
+  ],
+  "quote": {
+    "text": "I’ve never seen a diligence environment where the founders and operators were so in sync—everything we needed was one click away.",
+    "attribution": "Priya Das, Partner at Future Infrastructure Guild"
+  },
+  "cta": {
+    "label": "Request investor access",
+    "href": "/contact"
+  },
+  "comments": [
+    {
+      "name": "Noah Klein",
+      "role": "Principal, NorthBridge Ventures",
+      "message": "The narrative packets helped our partners see the revenue flywheel instantly. Rare to have this level of operational clarity pre-Series B.",
+      "timestamp": "June 29, 2024"
+    },
+    {
+      "name": "Dr. Sana Patel",
+      "role": "Advisor, Resilient Cloud Collective",
+      "message": "The compliance library is a standout. Having evidence organized by control owners made our review more efficient than any hyperscaler diligence I’ve supported.",
+      "timestamp": "June 29, 2024"
+    },
+    {
+      "name": "Elias Morgan",
+      "role": "LP, Sustainability Catalysts Fund",
+      "message": "Seeing carbon accounting tied to revenue in real time gave us conviction to increase our allocation. HyperScalerOwl is setting a new bar for transparency.",
+      "timestamp": "June 30, 2024"
+    }
+  ]
+}
