@@ -87,7 +87,7 @@ const businessModel = [
   },
 ];
 
-const storyVideoUrl = toEmbedUrl(process.env.NEXT_PUBLIC_STORY_VIDEO_URL);
+const storyVideoUrl = process.env.NEXT_PUBLIC_STORY_VIDEO_URL;
 
 const goToMarket = [
   {
@@ -415,8 +415,6 @@ export default function Home() {
                   src={storyVideoUrl}
                   title="GreenCloud cinematic pitch"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  loading="lazy"
-                  referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
                 />
               </div>

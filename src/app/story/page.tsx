@@ -1,15 +1,13 @@
 import Link from "next/link";
 import { Metadata } from "next";
 
-import BrandLockup from "@/components/BrandLockup";
-import { toEmbedUrl } from "@/lib/video";
 import homeStyles from "../page.module.css";
 import shellStyles from "../pageShell.module.css";
 import { footerLinks, navLinks } from "../navigationLinks";
 import { cinematicActs } from "./acts";
 import styles from "./page.module.css";
 
-const storyVideoUrl = toEmbedUrl(process.env.NEXT_PUBLIC_STORY_VIDEO_URL);
+const storyVideoUrl = process.env.NEXT_PUBLIC_STORY_VIDEO_URL;
 
 export const metadata: Metadata = {
   title: "GreenCloud Story | HyperScalerOwl",
@@ -21,7 +19,12 @@ export default function StoryPage() {
   return (
     <div className={shellStyles.wrapper}>
       <header className={shellStyles.header}>
-        <BrandLockup className={shellStyles.brand} variant="light" tagline="GreenCloud" priority />
+        <div className={shellStyles.brand}>
+          <span className={shellStyles.brandMark} aria-hidden>
+            ⬢
+          </span>
+          <span>HyperScalerOwl</span>
+        </div>
         <nav aria-label="Primary">
           <ul className={shellStyles.navList}>
             {navLinks.map((link) => (
@@ -52,8 +55,6 @@ export default function StoryPage() {
                 src={storyVideoUrl}
                 title="GreenCloud cinematic pitch"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                loading="lazy"
-                referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
               />
             </div>
@@ -109,7 +110,6 @@ export default function StoryPage() {
 
       <footer className={shellStyles.footer}>
         <div className={shellStyles.footerInner}>
-          <BrandLockup className={shellStyles.footerBrand} variant="light" compact tagline="GreenCloud" />
           <p>© {new Date().getFullYear()} HyperScalerOwl. Community-powered infrastructure for a resilient internet.</p>
           <ul className={shellStyles.footerNav}>
             {footerLinks.map((link) => (

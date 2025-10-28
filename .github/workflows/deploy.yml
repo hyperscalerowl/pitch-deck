@@ -19,13 +19,13 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NEXT_TELEMETRY_DISABLED: 1
-      NEXT_PUBLIC_STORY_VIDEO_URL: ${{ vars.NEXT_PUBLIC_STORY_VIDEO_URL }}
+      NEXT_PUBLIC_STORY_VIDEO_URL: https://www.youtube.com/watch?v=LZymeRtax3Q
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Use Node.js 20
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 20
           cache: "npm"
@@ -37,7 +37,7 @@ jobs:
         run: npm run build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: out
 

@@ -2,7 +2,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
-import BrandLockup from "@/components/BrandLockup";
 import styles from "../../pageShell.module.css";
 import { footerLinks, navLinks } from "../../navigationLinks";
 import { findPost, posts } from "../posts";
@@ -45,7 +44,12 @@ export default async function BlogPostPage({ params }: PageProps) {
   return (
     <div className={styles.wrapper}>
       <header className={styles.header}>
-        <BrandLockup className={styles.brand} variant="light" tagline="GreenCloud" priority />
+        <div className={styles.brand}>
+          <span className={styles.brandMark} aria-hidden>
+            ⬢
+          </span>
+          <span>HyperScalerOwl</span>
+        </div>
         <nav aria-label="Primary">
           <ul className={styles.navList}>
             {navLinks.map((link) => (
@@ -134,7 +138,6 @@ export default async function BlogPostPage({ params }: PageProps) {
 
       <footer className={styles.footer}>
         <div className={styles.footerInner}>
-          <BrandLockup className={styles.footerBrand} variant="light" compact tagline="GreenCloud" />
           <p>
             © {new Date().getFullYear()} HyperScalerOwl. Community-powered infrastructure for a resilient internet.
           </p>
