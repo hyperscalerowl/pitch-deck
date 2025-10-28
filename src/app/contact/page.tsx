@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { FormEvent, useState } from "react";
 
+import BrandLockup from "@/components/BrandLockup";
 import styles from "../pageShell.module.css";
 import { footerLinks, navLinks } from "../navigationLinks";
 
@@ -33,12 +34,7 @@ export default function ContactPage() {
   return (
     <div className={styles.wrapper}>
       <header className={styles.header}>
-        <div className={styles.brand}>
-          <span className={styles.brandMark} aria-hidden>
-            ⬢
-          </span>
-          <span>HyperScalerOwl</span>
-        </div>
+        <BrandLockup className={styles.brand} variant="light" tagline="GreenCloud" priority />
         <nav aria-label="Primary">
           <ul className={styles.navList}>
             {navLinks.map((link) => (
@@ -135,6 +131,7 @@ export default function ContactPage() {
 
       <footer className={styles.footer}>
         <div className={styles.footerInner}>
+          <BrandLockup className={styles.footerBrand} variant="light" compact tagline="GreenCloud" />
           <p>© {new Date().getFullYear()} HyperScalerOwl. Community-powered infrastructure for a resilient internet.</p>
           <ul className={styles.footerNav}>
             {footerLinks.map((link) => (

@@ -20,6 +20,14 @@ export const metadata: Metadata = {
   description:
     "GreenCloud is the distributed hyperscaler redefining cloud infrastructure with community-powered, sustainable compute.",
   metadataBase: new URL("https://greencloud.hyperscalerowl.com"),
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/brand/hyperscalerowl-mark.svg", type: "image/svg+xml" },
+    ],
+    shortcut: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    apple: [{ url: "/brand/hyperscalerowl-mark.svg", type: "image/svg+xml" }],
+  },
   openGraph: {
     title: "HyperScalerOwl GreenCloud",
     description:

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120" role="img" aria-labelledby="title desc">
+  <title id="title">HyperScalerOwl wordmark</title>
+  <desc id="desc">HyperScalerOwl logo with green owl mark and dark teal wordmark.</desc>
+  <defs>
+    <linearGradient id="wingGradient" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#29C38A" />
+      <stop offset="100%" stop-color="#1AA57A" />
+    </linearGradient>
+  </defs>
+  <g transform="translate(10 10)">
+    <g>
+      <path
+        fill="url(#wingGradient)"
+        d="M50 0C33.3 0 16.6 9.5 7 23.7c6.8-3.2 14.5-3.5 21.3-0.9 4.4 1.7 8.3 4.8 11.6 8.6L50 42l10.1-10.6c3.3-3.8 7.2-6.9 11.6-8.6 6.8-2.6 14.5-2.3 21.3 0.9C82.4 9.5 65.7 0 49 0Z"
+      />
+      <circle cx="39" cy="49" r="8.8" fill="#0E2D3C" />
+      <circle cx="60.5" cy="49" r="8.8" fill="#0E2D3C" />
+      <path
+        fill="#0E2D3C"
+        d="M49 42c-4.7 0-8.5 3.3-9.2 7.8l0.1 0.1c2.3-1.3 4.8-2 7.3-2h3.7c2.5 0 5 0.7 7.3 2l0.1-0.1C57.5 45.3 53.7 42 49 42Z"
+      />
+    </g>
+    <g transform="translate(100 22)" fill="#0E2D3C">
+      <path d="M0 0h8.8v23.6h24.3V0h8.8v55.2h-8.8V31.7H8.8v23.5H0Z" />
+      <path d="M60.2 0h8.8v55.2h-8.8Z" />
+      <path d="M82.9 0h8.3l21 36.2V0h8.6v55.2h-8.3L91.5 18.2v37H82.9Z" />
+      <path d="M155.4-0.7c14.5 0 24 10.3 24 28.5S169.9 56.3 155.4 56.3s-24-10.3-24-28.5 9.4-28.5 24-28.5Zm0 7.9c-9 0-14.9 7.1-14.9 20.6 0 13.4 6 20.5 14.9 20.5s14.9-7.1 14.9-20.5c0-13.5-6-20.6-14.9-20.6Z" />
+      <path d="M192.8 0h9.2l10.5 36.6L223 0h9.1l-15 55.2h-9.1Z" />
+      <path d="M239.4 0h8.8v55.2h-8.8Z" />
+      <path d="M261.2 0h8.3l21 36.2V0h8.6v55.2h-8.3l-21.1-37v37h-8.6Z" />
+      <path d="M334.2-0.7c8.9 0 14.1 4.1 17.4 8.8l-7 4.7c-2.1-3-5.2-5.4-10-5.4-6.8 0-11.4 5.6-11.4 14.6s4.7 14.6 11.4 14.6c4.8 0 8-2.4 10-5.4l7 4.6c-3.3 4.8-8.5 8.9-17.5 8.9-12.1 0-20.6-9.2-20.6-22.7s8.5-22.7 20.6-22.7Z" />
+      <path d="M363.5 0h9.7l13.6 19.4L400.4 0h9.4l-18.4 26 19.4 29.2h-9.8L386.4 32l-14.6 23.1h-9.7l19.1-28.1Z" />
+    </g>
+  </g>
+</svg>
