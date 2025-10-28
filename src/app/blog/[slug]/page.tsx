@@ -7,17 +7,18 @@ import { footerLinks, navLinks } from "../../navigationLinks";
 import { findPost, posts } from "../posts";
 
 type PageProps = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
 export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
 }
 
-export function generateMetadata({ params }: PageProps): Metadata {
-  const post = findPost(params.slug);
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = findPost(slug);
 
   if (!post) {
     return {
@@ -32,8 +33,9 @@ export function generateMetadata({ params }: PageProps): Metadata {
   };
 }
 
-export default function BlogPostPage({ params }: PageProps) {
-  const post = findPost(params.slug);
+export default async function BlogPostPage({ params }: PageProps) {
+  const { slug } = await params;
+  const post = findPost(slug);
 
   if (!post) {
     notFound();
