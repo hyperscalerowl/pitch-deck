@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NEXT_TELEMETRY_DISABLED: 1
+      NEXT_PUBLIC_STORY_VIDEO_URL: ${{ vars.NEXT_PUBLIC_STORY_VIDEO_URL }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

@@ -1,0 +1,64 @@
+{
+  "slug": "resilient-edge-architecture",
+  "title": "Architecting a Resilient Edge for GreenCloud",
+  "publishedAt": "2024-06-16",
+  "readingTime": "10 min read",
+  "excerpt": "Deep dive into the control plane, security model, and developer experience powering HyperScalerOwl’s distributed edge fabric.",
+  "description": "Break down the architectural decisions that let GreenCloud deliver enterprise reliability across thousands of edge locations.",
+  "intro": "Resilience isn’t an add-on for GreenCloud—it’s baked into every layer. From the service mesh to secret management, we designed the edge architecture to exceed hyperscaler expectations.",
+  "tags": [
+    "architecture",
+    "edge",
+    "security"
+  ],
+  "sections": [
+    {
+      "heading": "Autonomous control plane",
+      "body": [
+        "A triple-redundant control plane manages workloads, routing, and upgrades. Local control agents keep pods online even if backhaul connectivity falters, syncing state once links recover."
+      ]
+    },
+    {
+      "heading": "Security designed for zero trust",
+      "body": [
+        "Hardware roots of trust and short-lived workload identities mean every request is authenticated and authorized, even inside a single pod. Secrets never leave encrypted enclaves.",
+        "For regulated customers, compliance blueprints provide automated audit evidence through our policy engine."
+      ]
+    },
+    {
+      "heading": "Developer experience that feels centralized",
+      "body": [
+        "APIs, CLI workflows, and Terraform providers abstract away the distributed nature of the platform. Developers deploy once, and GreenCloud handles placement, compliance, and observability.",
+        "We surface per-region performance insights so teams can tune experiences without wrangling infrastructure primitives."
+      ]
+    }
+  ],
+  "quote": {
+    "text": "GreenCloud’s architecture gives us hyperscaler-grade reliability without sacrificing the edge performance our customers demand.",
+    "attribution": "Lara Chen, CTO at StreamForge"
+  },
+  "cta": {
+    "label": "Book a technical briefing",
+    "href": "/contact"
+  },
+  "comments": [
+    {
+      "name": "Arjun Mehta",
+      "role": "Head of Platform, Vertex Labs",
+      "message": "The Terraform provider made migration painless. Our latency dropped 35% while maintaining the same security posture.",
+      "timestamp": "June 17, 2024"
+    },
+    {
+      "name": "Grace O’Malley",
+      "role": "Security researcher, OpenInfra Alliance",
+      "message": "Appreciate the short-lived credentials approach. It’s rare to see zero-trust principles applied this thoroughly in edge environments.",
+      "timestamp": "June 18, 2024"
+    },
+    {
+      "name": "Tomas Rivera",
+      "role": "DevOps lead, Nova Mobility",
+      "message": "Our team finally shipped global updates without juggling region-specific quirks. Observability baked into the control plane is a huge win.",
+      "timestamp": "June 19, 2024"
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import styles from "./page.module.css";
 import { footerLinks } from "./navigationLinks";
+import { cinematicActs } from "./story/acts";
 
 type PersonaKey = "affiliates" | "customers" | "team";
 
@@ -84,6 +85,8 @@ const businessModel = [
   },
 ];
 
+const storyVideoUrl = process.env.NEXT_PUBLIC_STORY_VIDEO_URL;
+
 const goToMarket = [
   {
     title: "Community Flywheel",
@@ -123,69 +126,6 @@ const milestones = [
     title: "Edge Intelligence",
     description:
       "Deploying AI/ML GPU clusters, realtime gaming edge, and scientific compute workloads while preparing for Series B scale.",
-  },
-];
-
-const cinematicActs = [
-  {
-    label: "Opening",
-    title: "The Problem",
-    duration: "0:00 – 2:00",
-    scene:
-      "Midnight data centers growl beneath a narrator’s warning: the centralized cloud is fragile, extractive, and devouring energy.",
-    moments: [
-      "Statistics on outages and energy usage pulse on-screen",
-      "Entrepreneurs and business owners react to downtime news clips",
-      "A single question lingers: is there another way?",
-    ],
-  },
-  {
-    label: "Act 1",
-    title: "Enter HyperScalerOwl",
-    duration: "2:00 – 4:30",
-    scene:
-      "Sunrise hits the studio as Maya sketches GreenCloud on a whiteboard and walks audiences through neighborhoods filled with potential affiliates.",
-    moments: [
-      "Maya introduces the distributed hyperscaler concept",
-      "Community footage shows unused rooms ready for micro data centers",
-      "The first tagline appears: ‘The GreenCloud – The Distributed Hyperscaler’",
-    ],
-  },
-  {
-    label: "Act 2",
-    title: "The Three Pillars",
-    duration: "4:30 – 12:00",
-    scene:
-      "James, Sarah, and Marcus step into the spotlight to prove GreenCloud works for affiliates, SMBs, and enterprises alike.",
-    moments: [
-      "Affiliate dashboards reveal transparent earnings",
-      "Cloud users celebrate dramatic cost savings and uptime",
-      "Global map lights up as new locations join the network",
-    ],
-  },
-  {
-    label: "Act 3",
-    title: "Technology Deep Dive",
-    duration: "12:00 – 15:00",
-    scene:
-      "Alex, the CTO, narrates a data flow animation showcasing replication, failover, and encrypted shards that make the distributed mesh resilient.",
-    moments: [
-      "Step-by-step rendering of asset replication and routing",
-      "Compliance overlays for fintech workloads",
-      "Security cutaways emphasize distributed key management",
-    ],
-  },
-  {
-    label: "Act 4 & 5",
-    title: "Future Vision & Call to Action",
-    duration: "15:00 – 20:00",
-    scene:
-      "Maya surveys a rooftop skyline, projecting 200,000 affiliates and new AI, edge, and research offerings before the mic-drop invitation to join the movement.",
-    moments: [
-      "Animated globe shows exponential node growth",
-      "Product roadmap unveils GPUs, gaming, and scientific compute",
-      "Final montage of affiliates, users, and team extending the call to action",
-    ],
   },
 ];
 
@@ -471,6 +411,23 @@ export default function Home() {
               Our 20-minute cinematic pitch doubles as a due diligence tour—each act aligns to investor questions about the
               problem, the solution, and how we execute at scale.
             </p>
+          </div>
+          <div className={styles.videoSection}>
+            {storyVideoUrl ? (
+              <div className={styles.videoWrapper}>
+                <iframe
+                  src={storyVideoUrl}
+                  title="GreenCloud cinematic pitch"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
+            ) : (
+              <p className={styles.videoPlaceholder}>
+                Add the NEXT_PUBLIC_STORY_VIDEO_URL environment variable in your deployment pipeline to showcase the full
+                cinematic pitch right here.
+              </p>
+            )}
           </div>
           <div className={styles.storyboardGrid}>
             {cinematicActs.map((act) => (

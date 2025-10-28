@@ -1,0 +1,68 @@
+{
+  "slug": "sustainable-capacity-marketplace",
+  "title": "Designing the Sustainable Capacity Marketplace",
+  "publishedAt": "2024-06-24",
+  "readingTime": "8 min read",
+  "excerpt": "A look at how HyperScalerOwl routes compute to the cleanest power, compensates affiliates, and keeps workloads online through grid volatility.",
+  "description": "Explore the mechanics behind the GreenCloud marketplace that balances sustainability, uptime, and affiliate earnings across thousands of micro data centers.",
+  "intro": "GreenCloud’s marketplace does more than balance supply and demand—it optimizes for carbon, uptime, and community wealth in the same algorithmic breath. Here’s how it works under the hood.",
+  "tags": [
+    "sustainability",
+    "marketplace",
+    "infrastructure"
+  ],
+  "sections": [
+    {
+      "heading": "Carbon-aware orchestration",
+      "body": [
+        "Our scheduler ingests real-time carbon intensity data from grid operators and local sensors. Workloads are routed toward the cleanest kilowatt-hour without sacrificing latency or compliance constraints.",
+        "When renewables surge in one region, burst capacity shifts there automatically, boosting affiliate earnings while reducing emissions."
+      ]
+    },
+    {
+      "heading": "Affiliate incentives that compound",
+      "body": [
+        "Affiliates earn baseline revenue for capacity, plus bonuses for participating in demand response and energy storage programs. These incentives are transparent in the host dashboard, so affiliates can model upgrades before committing capital."
+      ],
+      "list": [
+        "Heat recapture retrofits increase revenue share by up to 8%",
+        "Battery participation opens a fixed resilience stipend per quarter",
+        "Sustainability certifications unlock premium enterprise workloads"
+      ]
+    },
+    {
+      "heading": "Failover with a community safety net",
+      "body": [
+        "Grid events trigger our failover cooperative: nearby affiliates absorb workloads while impacted hosts earn standby compensation. Customers see uninterrupted service, and hosts are rewarded for supporting their peers."
+      ]
+    }
+  ],
+  "quote": {
+    "text": "HyperScalerOwl’s incentive design proves sustainability and profitability can share the same ledger.",
+    "attribution": "Leah Winters, Head of Climate Tech at CivicGrid"
+  },
+  "cta": {
+    "label": "Become a marketplace partner",
+    "href": "/contact"
+  },
+  "comments": [
+    {
+      "name": "Jade Mensah",
+      "role": "Affiliate host, Accra",
+      "message": "The marketplace dashboard helped me plan a solar upgrade that paid for itself in four months. Love seeing the sustainability bonuses spelled out.",
+      "timestamp": "June 25, 2024"
+    },
+    {
+      "name": "Carlos Nguyen",
+      "role": "Director of Platform Ops, AeroWave",
+      "message": "Failover credits gave our compliance team confidence to migrate regulated workloads. The transparency around energy sourcing is unmatched.",
+      "timestamp": "June 26, 2024"
+    },
+    {
+      "name": "Marta Rossi",
+      "role": "Energy economist, GridForward Europe",
+      "message": "Seeing demand response integrated into compute economics is refreshing. It’s the missing bridge between grids and cloud providers.",
+      "timestamp": "June 27, 2024"
+    }
+  ]
+}
