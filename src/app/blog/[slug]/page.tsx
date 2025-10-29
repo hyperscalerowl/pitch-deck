@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
@@ -10,10 +9,10 @@ import styles from "../../pageShell.module.css";
 import { footerLinks, navLinks } from "../../navigationLinks";
 import { findPost, posts } from "../posts";
 
-type PageParams = Promise<{ slug: string }>;
-
 interface PageProps {
-  params: PageParams;
+  params: {
+    slug: string;
+  };
 }
 
 type SiteConfig = {
@@ -43,13 +42,12 @@ type BlogStrings = {
 const site = siteConfig as SiteConfig;
 const strings = blogStrings as BlogStrings;
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params;
-  const post = findPost(slug);
+export function generateMetadata({ params }: PageProps): Metadata {
+  const post = findPost(params.slug);
 
   if (!post) {
     return {};
@@ -61,13 +59,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default async function BlogPostPage({ params }: PageProps) {
-  const { slug } = await params;
-  const post = findPost(slug);
+export default function BlogPostPage({ params }: PageProps) {
+  const post = findPost(params.slug);
 
   if (!post) {
     notFound();
-    return null;
   }
 
   const legalText = site.footer.legal.replace(
@@ -120,14 +116,10 @@ export default async function BlogPostPage({ params }: PageProps) {
             </ul>
           </header>
 
-          <Image
+          <img
             src={post.image.src}
             alt={post.image.alt}
-            width={1280}
-            height={720}
             className={styles.heroImage}
-            priority
-            sizes="(max-width: 768px) 100vw, 1100px"
           />
 
           <p>{post.intro}</p>

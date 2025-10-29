@@ -83,13 +83,10 @@ export default function BlogIndexPage() {
         <section className={styles.cardGrid} aria-label="Blog posts">
           {posts.map((post) => (
             <article key={post.slug} className={styles.card}>
-              <Image
+              <img
                 src={post.image.src}
                 alt={post.image.alt}
-                width={640}
-                height={360}
                 className={styles.cardImage}
-                sizes="(max-width: 768px) 100vw, 320px"
               />
               <header>
                 <p className={styles.sectionHeading}>{post.title}</p>
