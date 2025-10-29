@@ -1,0 +1,13 @@
+{
+  "brand": {
+    "name": "HyperScalerOwl",
+    "mark": "\u2b22"
+  },
+  "cta": {
+    "primary": "Talk to us",
+    "defaultPost": "Partner with the team"
+  },
+  "footer": {
+    "legal": "\u00a9 {year} HyperScalerOwl. Community-powered infrastructure for a resilient internet."
+  }
+}

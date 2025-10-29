@@ -1,0 +1,59 @@
+{
+  "slug": "edge-intelligence-for-cities",
+  "title": "Edge Intelligence That Keeps Smart Cities Honest",
+  "publishedAt": "2024-05-28",
+  "readingTime": "6 min read",
+  "excerpt": "City networks are drowning in sensors, but without verifiable edge capacity their insights arrive too late. GreenCloud's municipal mesh fixes that.",
+  "tags": ["smart cities", "edge compute", "public sector"],
+  "image": {
+    "src": "https://media.istockphoto.com/id/1144319087/de/foto/globale-kommunikation-aus-den-st%C3%A4dten.jpg?s=1024x1024&w=is&k=20&c=nDB0j0wLt5ImuSW7ZkTd4TyNXC5MWuvMoU_WEbO6RbA=",
+    "alt": "City skyline with glowing nodes connected by digital communications"
+  },
+  "intro": "Municipal CTOs tell us the same story: the moment a traffic, safety, or climate feed leaves the city, latency destroys its value. Edge intelligence needs to live in the neighborhood it serves, and it needs governance that city councils can audit.",
+  "sections": [
+    {
+      "heading": "Sensor data without sovereignty is noise",
+      "paragraphs": [
+        "Across Barcelona, Rotterdam, and Austin, GreenCloud affiliates now host AI workloads that were previously forced into far-off hyperscale regions. Keeping inference within city limits preserved evidence chains for public safety teams and reduced false positives by 32%."
+      ]
+    },
+    {
+      "heading": "Emergency playbooks need deterministic performance",
+      "paragraphs": [
+        "Our municipal mesh prioritizes ambulance routing, flood detection, and air quality alerts above every other job. Local GPUs and TPUs spin up in seconds using demand-response cues from the grid, so command centers never wait for a cold start during a crisis."
+      ],
+      "list": [
+        "< 40 ms response time across 18 city districts",
+        "Evidence logs signed with post-quantum encryption",
+        "Full workload traceability for auditors within 24 hours"
+      ]
+    },
+    {
+      "heading": "Local ownership accelerates adoption",
+      "paragraphs": [
+        "City cooperatives fund the affiliate build-outs and take a revenue share from regional innovators that deploy on top. That financial loop helped a Rotterdam transit hackathon deploy to production in two weeks because the infrastructure budget was already approved."
+      ]
+    }
+  ],
+  "quote": {
+    "text": "When the compute is physically in your neighborhood library, the community trusts the AI that runs on it."
+  },
+  "cta": {
+    "label": "Plan a municipal pilot",
+    "href": "/contact"
+  },
+  "comments": [
+    {
+      "name": "Sabine Keller",
+      "role": "Chief Digital Officer, City of Rotterdam",
+      "message": "GreenCloud let us keep our traffic AI inside Dutch borders without losing burst capacity. Council approval was immediate once they toured an affiliate site.",
+      "timestamp": "May 29, 2024"
+    },
+    {
+      "name": "Ethan Brooks",
+      "role": "Emergency response lead, Austin",
+      "message": "We shaved two minutes off severe weather alerts because inference stays in our firehouse now. Citizens feel the difference every storm.",
+      "timestamp": "June 2, 2024"
+    }
+  ]
+}

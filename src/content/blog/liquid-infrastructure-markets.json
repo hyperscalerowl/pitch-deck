@@ -1,0 +1,59 @@
+{
+  "slug": "liquid-infrastructure-markets",
+  "title": "Tokenized Infrastructure Markets Are Funding the Next 1,000 Nodes",
+  "publishedAt": "2024-04-29",
+  "readingTime": "5 min read",
+  "excerpt": "Community investors want exposure to resilient digital infrastructure. Fractional GreenCloud nodes give them yield without speculative noise.",
+  "tags": ["tokenization", "infrastructure", "community finance"],
+  "image": {
+    "src": "https://media.istockphoto.com/id/1325762498/de/vektor/aktien-defi-w%C3%A4hrungssymbol-auf-raster-hintergrund-futuristisches-konzept-vektor-und.jpg?s=1024x1024&w=is&k=20&c=qEGgcwwe0RbsiRqbXJtdmp-nz-7mA3HHA9JfqxnHqB4=",
+    "alt": "Digital tokens floating above a futuristic financial grid"
+  },
+  "intro": "GreenCloud affiliates have always been locally owned, but funding rounds used to take months of paperwork. Our new fractional node marketplace lets co-ops, credit unions, and sustainability funds finance deployments in weeks while maintaining on-chain transparency.",
+  "sections": [
+    {
+      "heading": "From community bonds to programmable revenue",
+      "paragraphs": [
+        "Each node bundle is tokenized into revenue-sharing tranches. Investors pick climate-aligned metrics—like kilowatt-hours of heat recaptured or megawatts of storage dispatched—and receive payouts tied directly to those outcomes."
+      ]
+    },
+    {
+      "heading": "Regulated rails from day one",
+      "paragraphs": [
+        "We partner with qualified custodians and follow MiCA-aligned disclosures. Every marketplace participant completes KYC, and smart contracts include circuit breakers overseen by a community-elected trust council."
+      ],
+      "list": [
+        "24/7 cash flow reporting with energy telemetry proofs",
+        "Secondary trading for accredited local investors",
+        "Automated revenue splits for hosts, maintainers, and lenders"
+      ]
+    },
+    {
+      "heading": "Capital for climate-aligned scale",
+      "paragraphs": [
+        "The first three tranches funded 186 GPU-ready racks across Spain, Brazil, and Canada. Because payouts tie directly to efficiency, affiliates reinvested in heat pumps and rooftop solar that feed back into the network's carbon-negative balance sheet."
+      ]
+    }
+  ],
+  "quote": {
+    "text": "Infrastructure investing should reward communities first. Tokenization just gives us the rails to prove every payout."
+  },
+  "cta": {
+    "label": "Review marketplace terms",
+    "href": "/contact"
+  },
+  "comments": [
+    {
+      "name": "Jonah Webb",
+      "role": "Managing Partner, Resilience Ventures",
+      "message": "We onboarded as a strategic LP because the reporting granularity is unmatched. Our stakeholders see the carbon impact every quarter.",
+      "timestamp": "April 30, 2024"
+    },
+    {
+      "name": "Noor Hamadi",
+      "role": "Cooperative chair, Barrio Sol",
+      "message": "Fractional ownership meant our members could fund two racks without taking on debt. The payouts keep our solar upgrade fund growing.",
+      "timestamp": "May 3, 2024"
+    }
+  ]
+}

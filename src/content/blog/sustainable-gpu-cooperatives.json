@@ -1,0 +1,59 @@
+{
+  "slug": "sustainable-gpu-cooperatives",
+  "title": "Sustainable GPU Cooperatives Are Powering Open Science",
+  "publishedAt": "2024-03-05",
+  "readingTime": "9 min read",
+  "excerpt": "Academic labs and civic innovators need GPUs without hyperscale lock-in. Cooperative GreenCloud clusters make planetary-scale research accessible.",
+  "tags": ["research", "GPU", "cooperative"],
+  "image": {
+    "src": "https://media.istockphoto.com/id/1485857440/de/foto/globale-technologie.jpg?s=1024x1024&w=is&k=20&c=Si4Iu302BVuYKrLszi-BiV_dFMe7WwDOcDxJMGt_wuI=",
+    "alt": "Global technology network glowing around the earth"
+  },
+  "intro": "University compute queues stretch for months and independent researchers face impossible minimums. GreenCloud partnered with academic consortia and civic tech groups to build GPU cooperatives that align incentives around openness, reproducibility, and sustainability.",
+  "sections": [
+    {
+      "heading": "Governance that keeps research open",
+      "paragraphs": [
+        "Cooperatives vote on workload priorities, licensing norms, and data governance. Because infrastructure is distributed, no single institution can monopolize access or reroute the roadmap away from public interest research."
+      ]
+    },
+    {
+      "heading": "Hardware tuned for efficiency",
+      "paragraphs": [
+        "Liquid-cooled racks paired with on-site renewables drive PUE below 1.12. Telemetry is published openly so grant committees and climate auditors verify the sustainability claims behind every experiment."
+      ],
+      "list": [
+        "Shared cluster scheduler with fair-queuing for underfunded labs",
+        "Federated storage that respects data sovereignty agreements",
+        "Grant-friendly billing with transparent cost recovery"
+      ]
+    },
+    {
+      "heading": "Impact that scales beyond campus walls",
+      "paragraphs": [
+        "From open climate models to community health genomics, cooperative members publish breakthroughs faster because they can experiment without waiting for hyperscale credits. Partnerships with local high schools even spin up GPU literacy programs for the next generation."
+      ]
+    }
+  ],
+  "quote": {
+    "text": "Shared compute shouldn’t mean lowest-common-denominator resources. Cooperatives prove that abundance and accountability can coexist."
+  },
+  "cta": {
+    "label": "Launch a cooperative cluster",
+    "href": "/contact"
+  },
+  "comments": [
+    {
+      "name": "Dr. Amina Patel",
+      "role": "Director, Atlas Climate Lab",
+      "message": "We ran three years of simulations in five weeks. Publishing alongside our energy telemetry keeps funders confident in our sustainability claims.",
+      "timestamp": "March 8, 2024"
+    },
+    {
+      "name": "Hannes Müller",
+      "role": "Coordinator, Open Science Rhine",
+      "message": "The cooperative governance model ensures community groups get GPU time for civic data projects. It's the antidote to opaque cloud grants.",
+      "timestamp": "March 11, 2024"
+    }
+  ]
+}

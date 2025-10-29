@@ -1,16 +1,15 @@
-export const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/blog", label: "Blog" },
-  { href: "/contact", label: "Contact" },
-  { href: "/terms-and-conditions", label: "Terms" },
-  { href: "/privacy-policy", label: "Privacy" },
-];
+import navigation from "@/config/navigation.json";
 
-export const footerLinks = [
-  { href: "/impressum", label: "Impressum" },
-  { href: "/privacy-policy", label: "Privacy" },
-  { href: "/terms-and-conditions", label: "Terms" },
-  { href: "/contact", label: "Contact" },
-  { href: "/blog", label: "Blog" },
-];
+type NavigationLink = {
+  href: string;
+  label: string;
+};
+
+type NavigationConfig = {
+  navLinks: NavigationLink[];
+  footerLinks: NavigationLink[];
+};
+
+const { navLinks, footerLinks } = navigation as NavigationConfig;
+
+export { navLinks, footerLinks };
