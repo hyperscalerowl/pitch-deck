@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
@@ -9,10 +10,12 @@ import styles from "../../pageShell.module.css";
 import { footerLinks, navLinks } from "../../navigationLinks";
 import { findPost, posts } from "../posts";
 
+type PageParams = {
+  slug: string;
+};
+
 interface PageProps {
-  params: {
-    slug: string;
-  };
+  params: Promise<PageParams>;
 }
 
 type SiteConfig = {
@@ -42,12 +45,13 @@ type BlogStrings = {
 const site = siteConfig as SiteConfig;
 const strings = blogStrings as BlogStrings;
 
-export function generateStaticParams() {
+export function generateStaticParams(): PageParams[] {
   return posts.map((post) => ({ slug: post.slug }));
 }
 
-export function generateMetadata({ params }: PageProps): Metadata {
-  const post = findPost(params.slug);
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = findPost(slug);
 
   if (!post) {
     return {};
@@ -59,8 +63,9 @@ export function generateMetadata({ params }: PageProps): Metadata {
   };
 }
 
-export default function BlogPostPage({ params }: PageProps) {
-  const post = findPost(params.slug);
+export default async function BlogPostPage({ params }: PageProps) {
+  const { slug } = await params;
+  const post = findPost(slug);
 
   if (!post) {
     notFound();
@@ -116,11 +121,16 @@ export default function BlogPostPage({ params }: PageProps) {
             </ul>
           </header>
 
-          <img
-            src={post.image.src}
-            alt={post.image.alt}
-            className={styles.heroImage}
-          />
+          <div className={styles.heroImageWrapper}>
+            <Image
+              src={post.image.src}
+              alt={post.image.alt}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 60vw"
+              className={styles.heroImage}
+              priority
+            />
+          </div>
 
           <p>{post.intro}</p>
 
