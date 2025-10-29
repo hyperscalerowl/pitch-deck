@@ -1,25 +1,64 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+
+import siteConfig from "@/config/site.json";
+import blogStrings from "@/locales/en/blog.json";
 
 import styles from "../pageShell.module.css";
 import { footerLinks, navLinks } from "../navigationLinks";
 import { posts } from "./posts";
 
+type SiteConfig = {
+  brand: {
+    name: string;
+    mark: string;
+  };
+  cta: {
+    primary: string;
+  };
+  footer: {
+    legal: string;
+  };
+};
+
+type BlogStrings = {
+  metadata: {
+    title: string;
+    description: string;
+  };
+  index: {
+    heroTitle: string;
+    heroIntro: string;
+    readStoryCta: string;
+  };
+  detail: {
+    commentSectionIntro: string;
+  };
+};
+
+const site = siteConfig as SiteConfig;
+const strings = blogStrings as BlogStrings;
+
 export const metadata: Metadata = {
-  title: "GreenCloud Blog | HyperScalerOwl",
-  description:
-    "Stories and insights from the HyperScalerOwl team on distributed hyperscale, community-powered infrastructure, and sustainable compute.",
+  title: strings.metadata.title,
+  description: strings.metadata.description,
 };
 
 export default function BlogIndexPage() {
+  const legalText = site.footer.legal.replace(
+    "{year}",
+    new Date().getFullYear().toString(),
+  );
+
   return (
     <div className={styles.wrapper}>
       <header className={styles.header}>
         <div className={styles.brand}>
           <span className={styles.brandMark} aria-hidden>
-            ⬢
+            {site.brand.mark}
           </span>
-          <span>HyperScalerOwl</span>
+          <span>{site.brand.name}</span>
         </div>
         <nav aria-label="Primary">
           <ul className={styles.navList}>
@@ -31,26 +70,40 @@ export default function BlogIndexPage() {
           </ul>
         </nav>
         <Link className={styles.navCta} href="/contact">
-          Talk to us
+          {site.cta.primary}
         </Link>
       </header>
 
       <main className={styles.main}>
         <section>
-          <h1 className={styles.heroTitle}>Field notes from the GreenCloud revolution</h1>
-          <p className={styles.heroIntro}>
-            Explore how community hosts, builders, and partners are reinventing cloud infrastructure with resilient, sustainable
-            capacity that belongs to everyone.
-          </p>
+          <h1 className={styles.heroTitle}>{strings.index.heroTitle}</h1>
+          <p className={styles.heroIntro}>{strings.index.heroIntro}</p>
         </section>
 
         <section className={styles.cardGrid} aria-label="Blog posts">
           {posts.map((post) => (
             <article key={post.slug} className={styles.card}>
+              <Image
+                src={post.image.src}
+                alt={post.image.alt}
+                width={640}
+                height={360}
+                className={styles.cardImage}
+                sizes="(max-width: 768px) 100vw, 320px"
+              />
               <header>
                 <p className={styles.sectionHeading}>{post.title}</p>
                 <ul className={styles.metaList}>
-                  <li>{new Date(post.publishedAt).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" })}</li>
+                  <li>
+                    {new Date(post.publishedAt).toLocaleDateString(
+                      undefined,
+                      {
+                        month: "short",
+                        day: "numeric",
+                        year: "numeric",
+                      },
+                    )}
+                  </li>
                   <li>{post.readingTime}</li>
                 </ul>
               </header>
@@ -62,8 +115,12 @@ export default function BlogIndexPage() {
                   ))}
                 </ul>
               </footer>
-              <Link href={`/blog/${post.slug}`} className={styles.navCta} style={{ display: "inline-block", marginTop: "1rem" }}>
-                Read the story
+              <Link
+                href={`/blog/${post.slug}`}
+                className={styles.navCta}
+                style={{ display: "inline-block", marginTop: "1rem" }}
+              >
+                {strings.index.readStoryCta}
               </Link>
             </article>
           ))}
@@ -72,7 +129,7 @@ export default function BlogIndexPage() {
 
       <footer className={styles.footer}>
         <div className={styles.footerInner}>
-          <p>© {new Date().getFullYear()} HyperScalerOwl. Community-powered infrastructure for a resilient internet.</p>
+          <p>{legalText}</p>
           <ul className={styles.footerNav}>
             {footerLinks.map((link) => (
               <li key={link.href}>
