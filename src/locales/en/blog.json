@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "title": "GreenCloud Blog | HyperScalerOwl",
+    "description": "Stories and insights from the HyperScalerOwl team on distributed hyperscale, community-powered infrastructure, and sustainable compute."
+  },
+  "index": {
+    "heroTitle": "Field notes from the GreenCloud revolution",
+    "heroIntro": "Explore how community hosts, builders, and partners are reinventing cloud infrastructure with resilient, sustainable capacity that belongs to everyone.",
+    "readStoryCta": "Read the story"
+  },
+  "detail": {
+    "backLink": "\u2190 Back to all posts",
+    "tagsLabel": "Tags",
+    "commentSectionTitle": "Community reflections",
+    "commentSectionIntro": "Real stories from hosts, customers, and partners reacting to the GreenCloud vision in their cities.",
+    "defaultCtaLabel": "Partner with the team"
+  }
+}
